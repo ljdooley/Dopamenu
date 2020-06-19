@@ -1,0 +1,14 @@
+/* global */
+
+
+/* phone */
+.collapse {
+    display: block;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    width: 100%
+}
+
+/* desktop */
+
