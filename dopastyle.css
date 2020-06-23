@@ -10,5 +10,10 @@
     width: 100%
 }
 
+.MenuOptions {
+    display: none;
+    overflow: hidden;
+}
+
 /* desktop */
 
