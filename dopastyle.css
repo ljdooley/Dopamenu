@@ -1,7 +1,4 @@
-/* global */
 
-
-/* phone */
 .collapse {
     display: block;
     text-align: left;
@@ -15,9 +12,43 @@
     overflow: hidden;
 }
 
- 
+/* --- 600px or wider: targeting tablets and desktops --- */ 
 @media only screen and (min-width: 600px) {
+    /* flex container */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    /* flex items */
+    .above,
+    .below {
+        width: 40%;
+    }
+
+    .below {
+        order: 2;
+    }
+
+    .maincourse {
+        order: 1;
+        width: 100%;
+    }
+
+    /* non-flex items */
+    .collapse{
+        text-align: center;
+    }
     .MenuOptions {
         display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    ul {
+        list-style-position: inside;
+        padding: 0;
     }
 }
+  
