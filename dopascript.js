@@ -1,3 +1,4 @@
+//changes the display value, and the onclick attribute depending on the screen size. 
 function mediaspecific(x) { 
     let collapsible = document.getElementsByClassName("collapse"); 
     let i;
@@ -15,9 +16,9 @@ function mediaspecific(x) {
     }
 }
 
+//expands and collapses the content
 function accordion(x) {
     let content = document.getElementById(x)
-    //console.log(content);
     if (content.style.display === "block"){
         content.style.display = "none";
     } else {
@@ -27,7 +28,7 @@ function accordion(x) {
 }
 
 var notmobile = window.matchMedia("(min-width:600px)");
-mediaspecific(notmobile);
-notmobile.addListener(mediaspecific);
+mediaspecific(notmobile); //runs when first opened
+notmobile.addListener(mediaspecific); //listens for sreen size change
 
 
