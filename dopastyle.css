@@ -28,6 +28,12 @@ section {
 .MenuOptions {
     display: none;
     overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+
+li:nth-child(odd) {
+    list-style-type: circle;
 }
 
 /* --- 600px or wider: targeting tablets and desktops --- */ 
@@ -57,7 +63,10 @@ section {
     /* non-flex items */
     .collapse{
         text-align: center;
+        width: 90%;
+        margin: auto;
     }
+
     .MenuOptions {
         display: block;
         margin: auto;
