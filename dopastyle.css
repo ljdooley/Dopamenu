@@ -4,7 +4,7 @@ header {
 }
 
 header > h2 {
-    padding-left: 2em;
+    text-indent: 2em;
 }
 
 section {
@@ -61,6 +61,14 @@ li:nth-child(odd) {
     }
 
     /* non-flex items */
+    header{
+        text-align: center;
+    }
+
+    header > h2 {
+        text-indent: 5em;
+    }
+
     .collapse{
         text-align: center;
         width: 90%;
