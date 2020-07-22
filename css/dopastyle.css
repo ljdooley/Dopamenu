@@ -55,6 +55,18 @@ li:nth-child(odd) {
     list-style-type: circle;
 }
 
+footer {
+    line-height: 1em;
+    background-color: #EFEFEF;
+    padding-top: 1.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: .25em;
+    margin: auto;
+    /*width: calc(calc(100% - 2em) * .9);*/
+    border-radius: 1em 1em 0 0;
+}
+
 /* --- 600px or wider: targeting tablets and desktops --- */ 
 @media only screen and (min-width: 600px) {
     /* flex container */
