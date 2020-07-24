@@ -7,8 +7,8 @@ This website is my customized dopamenu geared towards my own goals and activitie
 
 ## Features
 * In mobile the menu collapses down to an accordion, where each content section can be expanded and collapsed by clicking on the section name (main course, appetizer, etc).
-* Used flexbox to rearrange content areas as the screen changes size
 * Used media queries to switch from a one-column mobile layout to a two column desktop layout.
+* Flexbox was used to make the two column layout responsive to different screen size, and to rearrange the order of the content when on desktop. On mobile the main course section is before the sauces and sides section, but on desktop the main course section is after the sauces and sides section.
 * Used ":nth child" CSS to style the bullet points on unordered lists to alternate between circle and disk. 
 
 # Acknowledgments
