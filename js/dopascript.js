@@ -1,6 +1,6 @@
 //changes the display value of sections with class menuoptions, and the onclick attribute of buttons with class collapse depending on the screen size. 
 function mediaspecific(x) { 
-    let collapsible = document.getElementsByClassName("collapse"); //creates an array of all buttons with class collapse
+    let collapsible = document.getElementsByClassName("collapse"); //creates a collection of all buttons with class collapse
     let i;
     for(i = 0; i < collapsible.length; i++){
         collapsible[i].nextElementSibling.setAttribute("id", `${i}`) //next sibling elements all have class menuoptions
@@ -18,7 +18,7 @@ function mediaspecific(x) {
 
 //expands and collapses the content, initiated by clicking button. The value of x was assigned in the mediaspecific function.
 function accordion(x) {
-    let content = document.getElementById(x) //creates an array of all buttons w/id attribute value set to the value stored in x
+    let content = document.getElementById(x) //creates a collection of all buttons w/id attribute value set to the value stored in x
     if (content.style.display === "block"){
         content.style.display = "none";
     } else {
