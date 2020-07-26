@@ -1,12 +1,12 @@
 header {
-    line-height: 1em;
+    line-height: 1rem;
     background-color: #EFEFEF;
-    padding-top: 1.25em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: .25em;
+    padding-top: 1.25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: .25rem;
     margin: auto;
-    border-radius: 0 0 1em 1em;
+    border-radius: 0 0 1rem 1rem;
 }
 
 header > h1 {
@@ -14,7 +14,7 @@ header > h1 {
 }
 
 header > h2 {
-    text-indent: 2em;
+    text-indent: 2rem;
 }
 
 body {
@@ -22,27 +22,33 @@ body {
 }
 
 main{
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .above,
 .maincourse,
 .below {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     width: 90vw;
-    margin-right: 1em;
-    margin-left: 1em;
+    margin-right: 1rem;
+    margin-left: 1rem;
     box-sizing: border-box;
+}
+
+.collapse::first-line {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .collapse {
     display: block; 
     text-align: left;
     border: none;
-    border-radius: 1em;
+    border-radius: 1rem;
     width: 100%;
-    line-height: 1;
     box-sizing: border-box;
+    font-size: 1.17rem;
+    padding: 1rem;
 }
 
 .menuoptions {
@@ -58,11 +64,11 @@ li:nth-child(odd) {
 }
 
 footer {
-    line-height: 1em;
+    line-height: 1rem;
     text-align: center;
     background-color: #EFEFEF;
     margin: auto;
-    border-radius: 1em 1em 0 0;
+    border-radius: 1rem 1rem 0 0;
 }
 
 /* --- 600px or wider: targeting tablets and desktops --- */ 
@@ -95,11 +101,11 @@ footer {
     /* non-flex items */
     header{
         text-align: center;
-        margin-bottom: 1.5em;
+        margin-bottom: 1.5rem;
     }
 
     header > h2 {
-        text-indent: 5em;
+        text-indent: 5rem;
     }
 
     .collapse{
