@@ -25,7 +25,9 @@ main{
     margin-top: 1em;
 }
 
-section {
+.above,
+.maincourse,
+.below {
     margin-bottom: 1em;
     width: 90vw;
     margin-right: 1em;
@@ -110,8 +112,8 @@ footer {
     .menuoptions {
         display: block;
         margin: auto;
-        width: fit-content;
-        width: -moz-fit-content;
+        width: fit-content; /* not supported on IE and firefox */
+        width: -moz-fit-content; /*allows fit-content to work on firefox */
     }
 
     ul {
