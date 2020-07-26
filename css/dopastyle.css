@@ -1,6 +1,6 @@
 header {
     line-height: 1rem;
-    background-color: #EFEFEF;
+    background-color: #A5AEB6;
     padding-top: 1.25rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -19,6 +19,8 @@ header > h2 {
 
 body {
     margin: auto;
+    background-color: #F3F3F7;
+    color: #191510;
 }
 
 main{
@@ -49,6 +51,7 @@ main{
     box-sizing: border-box;
     font-size: 1.17rem;
     padding: 1rem;
+    background-color: #C7CCD1;
 }
 
 .menuoptions {
@@ -58,15 +61,26 @@ main{
     margin: 0;
 }
 
+li {
+    /* color: #CE4760; */
+    color: #B12F47;
+    font-weight: bold;
+}
+
 /* This alternates the bullet style between disc and circle */ 
 li:nth-child(odd) {
     list-style-type: circle;
 }
 
+li > span {
+    color: #611926;
+    font-weight: normal;
+}
+
 footer {
     line-height: 1rem;
     text-align: center;
-    background-color: #EFEFEF;
+    background-color: #C7CCD1;
     margin: auto;
     border-radius: 1rem 1rem 0 0;
     padding-bottom: 1rem;
