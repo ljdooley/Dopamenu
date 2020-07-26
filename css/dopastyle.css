@@ -69,41 +69,58 @@ footer {
     background-color: #EFEFEF;
     margin: auto;
     border-radius: 1rem 1rem 0 0;
+    padding-bottom: 1rem;
 }
 
 /* --- 600px or wider: targeting tablets and desktops --- */ 
 @media only screen and (min-width: 600px) {
-    
-    /* flex container */
+   
+    /* - flex containers - body and main*/
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin:0;
+    }
+
     main {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        flex: 1 0 auto;
     }
 
-    /* flex items */
+    /* - flex items of main - above, below, maincourse*/
     .above,
     .below {
         width: 40%; /* two columns */
     }
     
-    /* ensures the section's w/class below are below the main course in the layout */
     .below {
+        /* ensures the section's w/class below are below the main course in the layout */
         order: 2; 
     }
     
-    /* places maincourse on it's own line, and after the sections w/class name "above". */
     .maincourse { 
+        /* places maincourse on it's own line, and after the sections w/class name "above". */
         order: 1; 
         width: 100%; 
     }
-
-    /* non-flex items */
+    
+    /* - flex items of body - main, header, footer - */
     header{
         text-align: center;
         margin-bottom: 1.5rem;
     }
 
+    header,
+    footer {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* non-flex items */
     header > h2 {
         text-indent: 5rem;
     }
@@ -114,8 +131,8 @@ footer {
         margin: auto;
     }
 
-    /* this allows the UL to be centered, but with all of the bullet points in a straight line */
     .menuoptions {
+        /* this allows the UL to be centered, but with all of the bullet points in a straight line */
         display: block;
         margin: auto;
         width: fit-content; /* not supported on IE and firefox */
