@@ -19,7 +19,7 @@ header > h2 {
 
 body {
     margin: auto;
-    background-color: #F3F3F7;
+    background-color: #F1DBFF;
     color: #191510;
 }
 
@@ -73,7 +73,7 @@ li:nth-child(odd) {
 }
 
 li > span {
-    color: #611926;
+    color: #191510;
     font-weight: normal;
 }
 
